@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #container {
+            display: grid;
+            /* margin-inline-end: ; */
+            grid-template-columns: repeat(6, 60px 1fr);
+            grid-gap: 7px;
+            background-color: green;
+            padding: 7px;
+            
+        }
+
+        #container > div {
+            background-color: beige;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The repeat() Function</h1>
+
+    <p>Here, repeat(2, 60px 1fr) creates two columns; column1 will take up 60px and column2 takes up one fraction of the
+        available space, and this is repeated for all columns. </p>
+
+    <p>This will be the same as writing grid-template-columns: 60px 1fr 60px 1fr; </p>
+
+    <div id="container">
+        <div>This is 60 pixels wide.</div>
+        <div>This has flexible width.</div>
+        <div>This is 60 pixels wide.</div>
+        <div>This has flexible width.</div>
+        <div>This is 60 pixels wide.</div>
+        <div>This has flexible width.</div>
+        <div>This is 60 pixels wide.</div>
+        <div>This has flexible width.</div>
+        <div>This is 60 pixels wide.</div>
+        <div>This has flexible width.</div>
+        <div>This is 60 pixels wide.</div>
+        <div>This has flexible width.</div>
+    </div>
+
+</body>
+</html>

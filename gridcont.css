@@ -1,0 +1,32 @@
+
+.grid-container {
+
+  /* This turns the element into a grid container */
+  display: grid; 
+
+  
+  /* Define 3 columns of equal width */
+  grid-template-columns: 1fr 1fr 1fr;
+
+  
+  /* Define the height of the rows (optional) */
+  grid-template-rows: 100px 100px;
+  
+  /* Define the gap between cells */
+  gap: 20px;
+}
+
+/* Some basic styling for visualization */
+.grid-item {
+
+  background-color: #44a8b3;
+
+  color: rgb(255, 255, 255);
+
+
+  display: grid;
+  place-items: center; 
+  /* A handy shorthand to center content */
+  
+  font-size: 2em;
+}
